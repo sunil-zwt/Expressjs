@@ -1,8 +1,6 @@
 module.exports = function (options) {
-    
-    return function (req, res, next) {
-        const {method,url}=req
-        console.log('method:',method,'url',url)
-      next()
-    }
+  return function (req, res, next) {
+    res.status(200).send(user)
+    next()
   }
+}
